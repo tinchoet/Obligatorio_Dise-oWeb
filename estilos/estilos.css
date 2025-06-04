@@ -1,0 +1,355 @@
+/* #region MARK: root */
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Geologica:wght@100..900&family=Orbitron:wght@400..900&family=PT+Sans+Caption:wght@400;700&family=Saira:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --primario: #0076ce; /* Color primario, usar para los botones y los links */
+  --fondoPrimario: #000080; /* Color para fondo, header y footer */
+  --texto: #ffffff;
+  --fondoSecundario: #f5f5f5;
+  --azulComplementario: #e6f3fc; /* Hover o secciones */
+
+  --fuenteTitulo: "Geologica", sans-serif;
+  --fuenteParrafos: "PT Sans Caption", sans-serif;
+  --fuenteNombres: "Saira", sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  width: 100%;
+  background-color: var(--fondoPrimario);
+  color: var(--texto);
+}
+.contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 150px 0;
+}
+
+/* #endregion */
+
+/* #region MARK: header */
+.logo {
+  width: 70px;
+}
+nav {
+  background-color: #ffffff;
+}
+.navegacion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.menu a {
+  color: #000000;
+  text-decoration: none;
+  margin-left: 10px;
+  font-family: var(--fuenteParrafos);
+}
+.menu a:hover {
+  text-decoration: underline;
+  color: var(--fondoPrimario);
+}
+
+.banner {
+  padding: 20%;
+  background-image: linear-gradient(
+      rgba(0, 0, 128, 0),
+      rgba(0, 0, 128, 0.7) 90%
+    ),
+    url(/img/bannerHorizon.webp);
+
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  filter: saturate(200%) opacity(90%);
+}
+
+h1 {
+  font-family: "Audiowide", sans-serif;
+  font-size: 35px;
+  letter-spacing: 2px;
+}
+
+.a_banner {
+  text-decoration: none;
+  color: #000000;
+  font-family: var(--fuenteNombres);
+  font-size: 20px;
+  background-color: #ffffff;
+  transition: 0.2s;
+  padding: 5px 20px;
+  border-radius: 15px;
+}
+
+.a_banner:hover {
+  background-color: var(--primario);
+  color: var(--texto);
+}
+/* #endregion */
+
+/* #region MARK: destacados */
+.juego_destacado1 {
+  background: linear-gradient(#e66465, #9198e5);
+}
+.destacado1 {
+  display: flex;
+  align-items: center;
+  gap: 55px;
+}
+
+.img_destacados {
+  width: 90%;
+  filter: saturate(120%);
+  border-radius: 20px;
+  box-shadow: #26394d 0px 20px 30px -10px;
+}
+.txt_destacado {
+  font-family: var(--fuenteParrafos);
+  font-size: 20px;
+}
+.txt_destacado2 span {
+  color: #000000;
+}
+.txt_destacado p,
+.txt_destacado2 p {
+  font-size: 18px;
+}
+.txt_juego {
+  font-size: 25px;
+}
+
+.juego_destacado2 {
+  background: linear-gradient(#0d0000 15%, #F11D1A);
+}
+
+.destacado2 {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 55px;
+}
+
+.txt_destacado {
+  color: #ffffff;
+  font-family: var(--fuenteTitulo);
+  font-size: 20px;
+  text-align: left;
+}
+.txt_destacado2 {
+  color: #ffffff;
+  font-family: var(--fuenteTitulo);
+  font-size: 20px;
+  text-align: right;
+}
+.txt_destacado p,
+.txt_destacado2 p {
+  font-family: var(--fuenteNombres);
+}
+
+.a_destacados {
+  font-size: 15px;
+  text-decoration: none;
+  background-color: #ffffff;
+  transition: 0.2s;
+  padding: 5px 15px;
+  border-radius: 15px;
+}
+
+.a_destacados:hover {
+  color: var(--texto);
+  background-color: #000000;
+}
+
+/* #endregion */
+
+/* #region MARK: Catalogo */
+.sect_catalogo {
+  text-align: center;
+  padding: 150px 0;
+  background: linear-gradient(#F11D1A, #000080 50%);
+}
+.txt_catalogo h2 {
+  font-family: var(--fuenteTitulo);
+  font-size: 35px;
+}
+.txt_catalogo p {
+  font-family: var(--fuenteParrafos);
+  margin-bottom: 100px;
+}
+
+.nav_catalogo a {
+  font-family: var(--fuenteNombres);
+  background-color: var(--texto);
+  text-decoration: none;
+  color: #000000;
+  transition: 0.2s;
+  padding: 5px 20px;
+  border-radius: 10px;
+  margin: 10px;
+}
+.nav_catalogo a:hover {
+  background-color: var(--primario);
+  color: var(--texto);
+  text-decoration: none;
+  padding: 5px 20px;
+  border-radius: 10px;
+}
+
+.catalogo:first-child {
+  margin-top: 30px;
+}
+.img_catalogo {
+  width: 150px;
+  margin: 20px 15px;
+  filter: opacity(85%);
+  transition: width 0.5s;
+}
+
+.img_catalogo:hover {
+  filter: brightness(115%);
+  width: 200px;
+}
+
+/* #endregion */
+
+/* #region MARK: footer */
+footer {
+  background-color: var(--texto);
+}
+.footer {
+  color: #000000;
+  font-family: var(--fuenteTitulo);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding: 10px 0 25px 0;
+}
+
+.footer a {
+  color: #000000;
+  font-family: var(--fuenteTitulo);
+}
+
+.redes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  color: #000000;
+}
+.copy{
+  text-decoration: none;
+}
+
+/* #endregion */
+
+
+/* #region MARK: Pagina 2 */
+
+
+
+
+
+
+/* #region MARK: header */
+.banner_2 {
+  padding: 10%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(/img/shadows_banner.webp);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  filter: saturate(200%);
+}
+
+.txt_banner2 {
+  color: var(--texto);
+  text-align: center;
+  font-size: 40px;
+  font-family: "Audiowide", sans-serif;
+  font-size: 35px;
+  letter-spacing: 2px;
+}
+.txt_banner2 span{
+  color: red;
+  letter-spacing: 25px;
+}
+.caracteristicas{
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: var(--fuenteNombres);
+}
+/* #endregion */
+
+
+/* #region MARK: Requisitos */
+.requisitos{
+  display: flex;
+  gap: 100px;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--fuenteNombres);
+  font-size: 20px;
+}
+
+.specs ul{
+  padding: 18px;
+}
+/* #endregion */
+
+
+
+/* #region MARK: Galeria*/
+.contenedor_galeria{
+  padding-top: 0;
+}
+.contenedor_galeria img{
+width: 100%;
+filter: saturate(200%);
+border-radius: 10px;
+}
+
+.fotos{
+  display: flex;
+  gap: 20px;
+  padding-top: 70px;
+}
+.img_galeria{
+  opacity: 70%;
+}
+.img_galeria:hover{
+  opacity: 100%;
+  filter: saturate(130%);
+}
+/* #endregion */
+
+
+
+/* #region MARK: Comentarios*/
+.fondo_comentarios{
+  background-color: var(--fondoSecundario);
+}
+.comentarios{
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--fuenteParrafos);
+  color: #000000;
+}
+.usuario{
+  display: flex;
+  flex-direction: row;
+}
+.comentarios img{
+  width: 200px;
+}
+/* #endregion */
+
+
+
+/* #endregion */
