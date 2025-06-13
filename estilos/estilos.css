@@ -105,7 +105,7 @@ h1 {
 
 .img_destacados {
   width: 50%;
-  filter: saturate(150%);
+  filter: saturate(110%);
   border-radius: 20px;
   box-shadow: #26394d 0px 20px 30px -10px;
 }
